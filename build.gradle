@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'Soft3Assign1B.Main'
+
+repositories {
+    mavenCentral()
+     maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    implementation 'com.github.dseoirse:Software3-Assign1:0eaccc69f9'
+}
