@@ -149,30 +149,48 @@ public class Main  {
         CourseProg course2 = new CourseProg();
         CourseProg course3 = new CourseProg();
         
+        
         course1.setName("CS&IT");
         course2.setName("ECE");
         course3.setName("IT");
-        
-        ArrayList<Module> course1modules = new ArrayList<Module>();
+        //add modules to courses
+        ArrayList<Module> course1modules = new ArrayList<>();
         course1modules.add(mod1);
         course1modules.add(mod2);
+        course1modules.add(mod6);
         course1.setMoudles(course1modules);
         
 
-        ArrayList<Module> course2modules = new ArrayList<Module>();
+        ArrayList<Module> course2modules = new ArrayList<>();
         course2modules.add(mod3);
         course2modules.add(mod4);
+        course2modules.add(mod6);
         course2.setMoudles(course2modules);
         
         
-        ArrayList<Module> course3modules = new ArrayList<Module>();
+        ArrayList<Module> course3modules = new ArrayList<>();
         course3modules.add(mod5);
         course3modules.add(mod6);
         course3.setMoudles(course3modules);
         
-        ArrayList<Student> course1students = new ArrayList<Student>();
-        ArrayList<Student> course2students = new ArrayList<Student>();
-        ArrayList<Student> course3students = new ArrayList<Student>();
+        
+        //add students to courses
+        ArrayList<Student> course1students = new ArrayList<>();
+        course1students.add(s1);
+        course1students.add(s2);
+        course1.setStudents(course1students);
+        
+        
+        ArrayList<Student> course2students = new ArrayList<>();
+        course2students.add(s2);
+        course2students.add(s3);
+        course2.setStudents(course2students); 
+        
+        ArrayList<Student> course3students = new ArrayList<>();
+        course3students.add(s5);
+        course3.setStudents(course3students);
+        
+        
         
         DateTime courseStartDate = new DateTime(2021,9,1,0,0);
         //DateTime course2StartDate = new DateTime();
@@ -193,6 +211,8 @@ public class Main  {
         
         
 
+       //TODO printouts
+       
        
         
         
