@@ -1,11 +1,10 @@
-
 pipeline {
-    agent any
+    agent any 
     stages {
-        stage('Compile') {
+        stage('Stage 1') {
             steps {
-              bat 'gradle build --info'
+                echo 'Hello world!' 
             }
         }
-        }
     }
+}
