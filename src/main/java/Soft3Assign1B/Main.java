@@ -39,11 +39,11 @@ public class Main  {
         Student s4 = new Student();
         Student s5 = new Student();
         
-        s1.setName("");
-        s2.setName("");
-        s3.setName("");
-        s4.setName("");
-        s5.setName("");
+        s1.setName("John");
+        s2.setName("Mary");
+        s3.setName("Jane");
+        s4.setName("Jim");
+        s5.setName("Joe");
         
         s1.setAge(18);
         s2.setAge(22);
@@ -51,19 +51,91 @@ public class Main  {
         s4.setAge(21);
         s5.setAge(19);
         
-        s1.setDOB("");
-        s2.setDOB("");
-        s3.setDOB("");
-        s4.setDOB("");
-        s5.setDOB("");
+        s1.setDOB("10/5/2003");
+        s2.setDOB("1/2/1999");
+        s3.setDOB("4/7/2001");
+        s4.setDOB("8/9/2000");
+        s5.setDOB("3/1/2002");
         
-        //TODO id and courses and modules
+        s1.setID(139383);
+        s2.setID(134584);
+        s3.setID(130392);
+        s4.setID(136678);
+        s5.setID(134567);
+        
+        //TODO and courses and modules
         
         //s1.setCourses(courses);
         //s1.setCourses(courses);
         //s1.setCourses(courses);
         
+  // Module variables      
+//    private String Name;
+//    private String Id;
+//    private ArrayList<Student> students;
+//    private ArrayList<String> assiCourse;
+        Module mod1 = new Module();
+        Module mod2 = new Module();
+        Module mod3 = new Module();
+        Module mod4 = new Module();
+        Module mod5 = new Module();
+        Module mod6 = new Module();
         
+        mod1.setName("Systems Modelling");
+        mod2.setName("Machine Learning");
+        mod3.setName("Software Engineering 3");
+        mod4.setName("Information Retrieval");
+        mod5.setName("Graphics and Images");
+        mod6.setName("Advanced Professional Skills");
+         
+        mod1.setId("CT561");
+        mod2.setId("CT4101");
+        mod3.setId("CT417");
+        mod4.setId("CT4100");
+        mod5.setId("CT404");
+        mod6.setId("CT436");
+
+        ArrayList<Student> mod1students = new ArrayList<Student>();
+        mod1students.add(s1);
+        mod1students.add(s2);
+        mod1.setStudents(mod1students);
+        
+        ArrayList<Student> mod2students = new ArrayList<Student>();
+        mod2students.add(s1);
+        mod2students.add(s3);
+        mod2.setStudents(mod2students);
+              
+        ArrayList<Student> mod3students = new ArrayList<Student>();
+        mod3students.add(s4);
+        mod3students.add(s5);
+        mod3.setStudents(mod3students);       
+        
+        
+        ArrayList<Student> mod4students = new ArrayList<Student>();
+        mod4students.add(s1);
+        mod4students.add(s2);
+        mod4.setStudents(mod4students); 
+        
+        
+        ArrayList<Student> mod5students = new ArrayList<Student>();
+        mod5students.add(s4);
+        mod5students.add(s5);
+        mod5.setStudents(mod5students);
+        
+        
+        ArrayList<Student> mod6students = new ArrayList<Student>();
+        mod6students.add(s1);
+        mod6students.add(s2);
+        mod6students.add(s3);
+        mod6students.add(s4);
+        mod6students.add(s5);
+        mod6.setStudents(mod6students);
+        
+        
+        
+        //assiCourse should be of typ ProgCours and not a list?      
+        
+   
         
 // Course variables
 //    private String name;
@@ -77,62 +149,50 @@ public class Main  {
         CourseProg course2 = new CourseProg();
         CourseProg course3 = new CourseProg();
         
-        course1.setName("");
-        course2.setName("");
-        course3.setName("");
+        course1.setName("CS&IT");
+        course2.setName("ECE");
+        course3.setName("IT");
         
         ArrayList<Module> course1modules = new ArrayList<Module>();
+        course1modules.add(mod1);
+        course1modules.add(mod2);
+        course1.setMoudles(course1modules);
+        
+
         ArrayList<Module> course2modules = new ArrayList<Module>();
-        ArrayList<Module> course3Modules = new ArrayList<Module>();
+        course2modules.add(mod3);
+        course2modules.add(mod4);
+        course2.setMoudles(course2modules);
+        
+        
+        ArrayList<Module> course3modules = new ArrayList<Module>();
+        course3modules.add(mod5);
+        course3modules.add(mod6);
+        course3.setMoudles(course3modules);
         
         ArrayList<Student> course1students = new ArrayList<Student>();
         ArrayList<Student> course2students = new ArrayList<Student>();
         ArrayList<Student> course3students = new ArrayList<Student>();
         
-        DateTime course1StartDate = new DateTime();
-        DateTime course2StartDate = new DateTime();
-        DateTime course3StartDate = new DateTime();
+        DateTime courseStartDate = new DateTime(2021,9,1,0,0);
+        //DateTime course2StartDate = new DateTime();
+        //DateTime course3StartDate = new DateTime();
+        //one start and end date will do
+        course1.setStartDate(courseStartDate);
+        course2.setStartDate(courseStartDate);
+        course3.setStartDate(courseStartDate);
         
-        DateTime course1endDate = new DateTime();
-        DateTime course2endDate = new DateTime();
-        DateTime course3endDate = new DateTime();
         
         
+        DateTime courseEndDate = new DateTime(2021,11,20,0,0);
+        //DateTime course2endDate = new DateTime();
+        //DateTime course3endDate = new DateTime();
+        course1.setEndDate(courseEndDate);
+        course2.setEndDate(courseEndDate);
+        course3.setEndDate(courseEndDate);
         
-// Module variables      
-//    private String Name;
-//    private String Id;
-//    private ArrayList<Student> students;
-//    private ArrayList<String> assiCourse;
-        Module mod1 = new Module();
-        Module mod2 = new Module();
-        Module mod3 = new Module();
-        Module mod4 = new Module();
-        Module mod5 = new Module();
-        Module mod6 = new Module();
         
-        mod1.setName("");
-        mod2.setName("");
-        mod3.setName("");
-        mod4.setName("");
-        mod5.setName("");
-        mod6.setName("");
-        
-        mod1.setId("");
-        mod2.setId("");
-        mod3.setId("");
-        mod4.setId("");
-        mod5.setId("");
-        mod6.setId("");
 
-        ArrayList<Student> mod1students = new ArrayList<Student>();
-        ArrayList<Student> mod2students = new ArrayList<Student>();
-        ArrayList<Student> mod3students = new ArrayList<Student>();
-        ArrayList<Student> mod4students = new ArrayList<Student>();
-        ArrayList<Student> mod5students = new ArrayList<Student>();
-        ArrayList<Student> mod6students = new ArrayList<Student>();
-        
-        //assiCourse should be of typ ProgCours and not a list?
        
         
         
