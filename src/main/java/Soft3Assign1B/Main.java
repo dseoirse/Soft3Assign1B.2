@@ -16,7 +16,10 @@ import org.joda.time.DateTime;
  * @author dseok
  */
 public class Main  {
-
+        private static ArrayList<Module> allModules;
+        private static ArrayList<CourseProg> allCourses;
+        
+        
     /**
      * @param args the command line arguments
      */
@@ -81,6 +84,15 @@ public class Main  {
         Module mod5 = new Module();
         Module mod6 = new Module();
         
+        allModules = new ArrayList<>();
+        allModules.add(mod1);
+        allModules.add(mod2);
+        allModules.add(mod3);
+        allModules.add(mod4);
+        allModules.add(mod5);
+        allModules.add(mod6);
+        
+        
         mod1.setName("Systems Modelling");
         mod2.setName("Machine Learning");
         mod3.setName("Software Engineering 3");
@@ -95,35 +107,35 @@ public class Main  {
         mod5.setId("CT404");
         mod6.setId("CT436");
 
-        ArrayList<Student> mod1students = new ArrayList<Student>();
+        ArrayList<Student> mod1students = new ArrayList<>();
         mod1students.add(s1);
         mod1students.add(s2);
         mod1.setStudents(mod1students);
         
-        ArrayList<Student> mod2students = new ArrayList<Student>();
+        ArrayList<Student> mod2students = new ArrayList<>();
         mod2students.add(s1);
         mod2students.add(s3);
         mod2.setStudents(mod2students);
               
-        ArrayList<Student> mod3students = new ArrayList<Student>();
+        ArrayList<Student> mod3students = new ArrayList<>();
         mod3students.add(s4);
         mod3students.add(s5);
         mod3.setStudents(mod3students);       
         
         
-        ArrayList<Student> mod4students = new ArrayList<Student>();
+        ArrayList<Student> mod4students = new ArrayList<>();
         mod4students.add(s1);
         mod4students.add(s2);
         mod4.setStudents(mod4students); 
         
         
-        ArrayList<Student> mod5students = new ArrayList<Student>();
+        ArrayList<Student> mod5students = new ArrayList<>();
         mod5students.add(s4);
         mod5students.add(s5);
         mod5.setStudents(mod5students);
         
         
-        ArrayList<Student> mod6students = new ArrayList<Student>();
+        ArrayList<Student> mod6students = new ArrayList<>();
         mod6students.add(s1);
         mod6students.add(s2);
         mod6students.add(s3);
@@ -148,7 +160,10 @@ public class Main  {
         CourseProg course1 = new CourseProg();
         CourseProg course2 = new CourseProg();
         CourseProg course3 = new CourseProg();
-        
+        allCourses = new ArrayList<>();
+        allCourses.add(course1);
+        allCourses.add(course2);
+        allCourses.add(course3);
         
         course1.setName("CS&IT");
         course2.setName("ECE");
@@ -182,7 +197,7 @@ public class Main  {
         
         
         ArrayList<Student> course2students = new ArrayList<>();
-        course2students.add(s2);
+        course2students.add(s4);
         course2students.add(s3);
         course2.setStudents(course2students); 
         
@@ -212,10 +227,61 @@ public class Main  {
         
 
        //TODO printouts
+       //todo toString?
        
+       //System.out.println(course1.getName()+" "+course1.getMoudles().+" "+course1.getStudents());
+       printCourse(course1);
+       printCourse(course2);
+       printCourse(course3);
        
-        
+       printStudent(s1);
+       printStudent(s2);
+       printStudent(s3);
+       printStudent(s4);
+       printStudent(s5);
+
+
+
+    
+  
         
     }//end main method
+    
+    public static void printCourse(CourseProg course){
+        System.out.println(course.getName());
+        
+        for(Module m : course.getMoudles()){
+            System.out.println(m.getName()+":"+m.getId()+" ");
+        }//end for
+        System.out.println("\n");
+    }//end for course
+    
+    
+    public static void printStudent(Student s){
+        System.out.println("Name:"+s.getName()+" Username:"+s.getUsername());
+            System.out.print("Reg module :");
+            for(Module m : allModules){
+                //System.out.println(m.getName());
+                for(Student s1 : m.getStudents()){
+                    if(s.equals(s1)){
+                        System.out.print(m.getName()+", ");
+                    }//end if
+                }//nd get students for
+                
+            }//end all modules looop
+        System.out.println();
+        
+        for(CourseProg c : allCourses){
+            for(Student s2 : c.getStudents()){
+                if(s.equals(s2)){
+                    System.out.println("Registered in course: "+c.getName());
+                }
+            }
+        }
+        System.out.println("\n\n");
+        
+        
+        
+    }//end print students
     
 }//end main class
