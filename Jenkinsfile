@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'javac Main.java'
-                bat 'java Main'
+                bat 'javac src/main/java/Soft3Assign1B/Main.java'
+                bat 'java src/main/java/Soft3Assign1B/Main'
             }
         }
     }
