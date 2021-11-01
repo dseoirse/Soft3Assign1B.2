@@ -1,6 +1,6 @@
-gradleproject2/CourseProgTest.java
- gradleproject2.CourseProgTest
-gradleproject2/StudentTest.java
- gradleproject2.StudentTest
-gradleproject2/ModuleTest.java
- gradleproject2.ModuleTest
+gradleproject1/ModuleTest.java
+ gradleproject1.ModuleTest
+gradleproject1/StudentTest.java
+ gradleproject1.StudentTest
+gradleproject1/CourseProgTest.java
+ gradleproject1.CourseProgTest
