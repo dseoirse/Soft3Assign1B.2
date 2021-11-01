@@ -67,7 +67,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\Soft3Assign1B.jar;%APP_HOME%\lib\Software3-Assign1-0eaccc69f9.jar;%APP_HOME%\lib\joda-time-2.9.6.jar
+set CLASSPATH=%APP_HOME%\lib\Soft3Assign1B.jar;%APP_HOME%\lib\Software3Assign1-c9bf06ef91.jar;%APP_HOME%\lib\joda-time-2.10.13.jar
 
 
 @rem Execute Soft3Assign1B
