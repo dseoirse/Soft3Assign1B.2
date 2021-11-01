@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="gradleproject2.ModuleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-10-29T19:24:24" hostname="SEO" time="0.002">
+  <properties/>
+  <testcase name="testSetAssCourse" classname="gradleproject2.ModuleTest" time="0.0"/>
+  <testcase name="testGetId" classname="gradleproject2.ModuleTest" time="0.0"/>
+  <testcase name="testSetId" classname="gradleproject2.ModuleTest" time="0.001"/>
+  <testcase name="testSetStudents" classname="gradleproject2.ModuleTest" time="0.0"/>
+  <testcase name="testGetStudents" classname="gradleproject2.ModuleTest" time="0.0"/>
+  <testcase name="testGetName" classname="gradleproject2.ModuleTest" time="0.001"/>
+  <testcase name="testGetAssCourse" classname="gradleproject2.ModuleTest" time="0.0"/>
+  <testcase name="testSetName" classname="gradleproject2.ModuleTest" time="0.0"/>
+  <system-out><![CDATA[setAssiCourse
+getId
+setId
+setStudents
+getStudents
+getName
+getAssiCourse
+setName
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

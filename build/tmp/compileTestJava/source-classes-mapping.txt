@@ -1,0 +1,6 @@
+gradleproject2/CourseProgTest.java
+ gradleproject2.CourseProgTest
+gradleproject2/StudentTest.java
+ gradleproject2.StudentTest
+gradleproject2/ModuleTest.java
+ gradleproject2.ModuleTest

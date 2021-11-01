@@ -1,0 +1,43 @@
+ 
+getEndDate
+ 
+getStartDate
+ 
+setStudents
+ 
+getStudents
+ 
+setMoudles
+ 
+	getName
+ 
+setStartDate
+	 
+	setEndDate
+
+ 
+
+getMoudles
+ 
+	setName
+setAssiCourse
+getId
+setId
+setStudents
+getStudents
+	getName
+getAssiCourse
+	setName
+getID
+setID
+setCourses
+setModules
+	getName
+getUsername
+getCourses
+getAge
+getDOB
+getModules
+ 	setName
+!setAge
+"setDOB
