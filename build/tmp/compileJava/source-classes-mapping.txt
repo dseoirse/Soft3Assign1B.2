@@ -1,8 +1,2 @@
-gradleproject1/Module.java
- gradleproject1.Module
-gradleproject1/Student.java
- gradleproject1.Student
 Soft3Assign1B/Main.java
  Soft3Assign1B.Main
-gradleproject1/CourseProg.java
- gradleproject1.CourseProg
