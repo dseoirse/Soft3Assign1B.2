@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'Soft3Assign1B.Main'
+
+repositories {
+    mavenCentral()
+     maven { url 'https://www.jitpack.io' }
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    //testImplementation 'com.github.dseoirse:Software3Assign1:-SNAPSHOT'
+    implementation 'com.github.dseoirse:Software3Assign1:-SNAPSHOT'
+    
+    implementation 'joda-time:joda-time:2.10.13'
+}
+
+test {
+    useJUnit()
+}
