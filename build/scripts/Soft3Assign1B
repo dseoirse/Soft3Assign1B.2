@@ -80,7 +80,7 @@ case "`uname`" in
     ;;
 esac
 
-CLASSPATH=$APP_HOME/lib/Soft3Assign1B.jar:$APP_HOME/lib/Software3Assign1-c9bf06ef91.jar:$APP_HOME/lib/joda-time-2.10.13.jar
+CLASSPATH=$APP_HOME/lib/Soft3Assign1B.jar:$APP_HOME/lib/Software3Assign1--SNAPSHOT.jar:$APP_HOME/lib/joda-time-2.10.13.jar
 
 
 # Determine the Java command to use to start the JVM.
