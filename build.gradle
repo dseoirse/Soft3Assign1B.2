@@ -30,7 +30,7 @@ war.baseName = 'jcg-gradle-war-example'
 task deploy (dependsOn: war){
     copy {
         from "build/libs"
-        into "/tomcat/webapps"
+        into "C:/xampp/tomcat/webapps"
         include "*.war"
     }
 }
