@@ -12,7 +12,11 @@ pipeline {
             }
         }
 
-
+        stage('Deploy') {
+            steps {
+                sh './gradlew deploy'
+            }
+        }
     
     }
         post {
