@@ -21,11 +21,6 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+apply plugin: 'war'
+war.baseName = 'jcg-gradle-war-example'
 
-task deploy (dependsOn: war){
-    copy {
-        from "build/libs"
-        into "/tomcat/webapps"
-        include "*.war"
-    }
-}
