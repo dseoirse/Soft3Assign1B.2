@@ -3,6 +3,7 @@ apply plugin: 'jacoco'
 apply plugin: 'application'
 
 
+
 mainClassName = 'Soft3Assign1B.Main'
 
 repositories {
@@ -16,11 +17,20 @@ dependencies {
     implementation 'joda-time:joda-time:2.10.13'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    
+
 }
 
 test {
     useJUnitPlatform()
 }
 apply plugin: 'war'
-war.baseName = 'jcg-gradle-war-example'
 
+
+task deploy (dependsOn: war){
+    copy {
+        from "build/libs"
+        into "C:/xampp/tomcat/webapps"
+        include "*.war"
+    }
+}
