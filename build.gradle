@@ -22,10 +22,4 @@ test {
     useJUnitPlatform()
 }
 
-task deploy (dependsOn: war){
-    copy {
-        from "build/libs"
-        into "/tomcat/webapps"
-        include "*.war"
-    }
-}
+
