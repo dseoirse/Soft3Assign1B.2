@@ -12,18 +12,13 @@ repositories {
 }
 
 dependencies {
-    classpath 'com.bmuschko:gradle-tomcat-plugin:2.0'
+    classpath "com.github.sahara3:gradle-tomcat-runner-plugin:0.2.1"
     implementation 'com.github.dseoirse:Software3Assign1:-SNAPSHOT'    
     implementation 'joda-time:joda-time:2.10.13'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     
-    def tomcatVersion = '7.0.57'
-    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
-            "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}"
-    tomcat("org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}") {
-        exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
-    }
+
 }
 
 test {
