@@ -11,17 +11,9 @@ pipeline {
                  sh './gradlew war'
             }
         }
-        stage('Assemble') {
-            steps {
-                sh './gradlew assemble'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh './gradlew deploy'
-            }
 
-    }
+
+    
     }
         post {
         always {
