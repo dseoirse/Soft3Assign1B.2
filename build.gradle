@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'jacoco'
 apply plugin: 'application'
-apply plugin: "com.github.sahara3.tomcat-runner"
+
 
 
 mainClassName = 'Soft3Assign1B.Main'
@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    classpath "com.github.sahara3:gradle-tomcat-runner-plugin:0.2.1"
+
     implementation 'com.github.dseoirse:Software3Assign1:-SNAPSHOT'    
     implementation 'joda-time:joda-time:2.10.13'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
