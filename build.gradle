@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-
+    classpath 'com.bmuschko:gradle-tomcat-plugin:2.0'
     implementation 'com.github.dseoirse:Software3Assign1:-SNAPSHOT'    
     implementation 'joda-time:joda-time:2.10.13'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
